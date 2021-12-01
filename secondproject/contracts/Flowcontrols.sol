@@ -2,21 +2,59 @@ pragma solidity >=0.4.22 <0.9.0;
 
 // SPDX-License-Identifier: MIT
 
-contract DataTypes {
+contract FlowControl {
 
-    uint x = 9;
-    int i = -68; 
-    uint8 j = 17;
-    bool isEthereumCool = true; 
-    address owner = msg.sender; // msg.sender is the Ethereum address of the account that sent this transaction
-    bytes32 bMsg = "hello";
-    string sMsg = "hello"; 
+    function calcDozenDiscountIF(uint purchasedQty) private pure returns (bool){
+        bool givenDozenPrice = false;
 
-    function getStateVariables() public view returns (uint, int, uint, bool, address, bytes32, string memory) {
-        return (x, i, j, isEthereumCool, owner, bMsg, sMsg); 
+        if(purchasedQty >= 12)
+            givenDozenPrice= true;  // setting the discount on condition
+        else 
+            givenDozenPrice = false;
+
+        return(givenDozenPrice);    
+    } 
+
+    function calcDozenDiscountWHILE(uint purchaedQty) private pure returns (bool) {
+        bool givenDozenPrice = false;
+        uint numDonuts = 1;
+
+        while(numDonuts < purchaedQty){
+            numDonuts++;
+
+            if (numDonuts >= 12) {
+                givenDozenPrice = true;
+                break;
+            }
+        }
+            return (givenDozenPrice);
     }
 
-    function setbMsg(bytes32 newValue) private returns (bytes32) {
-        bMsg = newValue;
+      function calcDozenDiscountDO(uint purchaedQty) private pure returns (bool) {
+        bool givenDozenPrice = false;
+        uint numDonuts = 1;
+
+        do {
+            numDonuts++;
+            if (numDonuts >= 12) {
+                givenDozenPrice = true;
+                break;
+            }
+        }while(numDonuts < purchaedQty);
+
+        return (givenDozenPrice);
+    }
+
+    function calcDozenDiscountFOR(uint purchasedQty) private pure returns (bool) {
+        bool givenDozenPrice = false;
+        uint numdonuts = 1;
+
+        for (numdonuts = 1; numdonuts <= purchasedQty; numdonuts++){
+            if(numdonuts >= 12){
+                givenDozenPrice = true; 
+                break; 
+            }
+        }
+        return (givenDozenPrice);
     }
 }
