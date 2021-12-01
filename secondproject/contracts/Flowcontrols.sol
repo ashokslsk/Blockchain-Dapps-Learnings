@@ -58,3 +58,20 @@ contract FlowControl {
         return (givenDozenPrice);
     }
 }
+
+
+/* There are threee abilities to handle the exception 
+ - revert()
+    - undoes all state changes 
+    - can send return value to caller
+    - refunds remaining gas to the caller 
+    - indicates a transaction should be terminated before its completed.
+
+ - assert() (throw condition)
+    - something bad happened 
+
+ - require()
+    - checks for requirements before invoking the function 
+    - undoes  state changes 
+    - sends return value 
+    - refunds all remaining gas */
