@@ -1,0 +1,820 @@
+{
+    "contractName": "FlowControl",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ashok/Desktop/Blockchain-Workspace/secondproject/contracts/Flowcontrols.sol\":\"FlowControl\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ashok/Desktop/Blockchain-Workspace/secondproject/contracts/Flowcontrols.sol\":{\"keccak256\":\"0x61f8c63b17f30fef216f92c46e4d2e712599d453037f50ec15c1c97ff8ecce85\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e9b914f4e092f9c278e88139b98dbefc3c7d486c311e6aa958af7a3d8e0e14e\",\"dweb:/ipfs/QmQA3d3NRUnskhSY8wEJaskR7rtg5omJVapu9BjH3ev7Ys\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e0a57b201d79d2cc6e08b0990190b6f3fa3a37e139ecaeb94321201e5065b93864736f6c634300080a0033",
+    "deployedBytecode": "6080604052600080fdfea2646970667358221220e0a57b201d79d2cc6e08b0990190b6f3fa3a37e139ecaeb94321201e5065b93864736f6c634300080a0033",
+    "sourceMap": "67:729:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "67:729:0:-:0;;;;;",
+    "sourcePath": "/Users/ashok/Desktop/Blockchain-Workspace/secondproject/contracts/Flowcontrols.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.10+commit.fc410830"
+    },
+    "ast": {
+        "absolutePath": "/Users/ashok/Desktop/Blockchain-Workspace/secondproject/contracts/Flowcontrols.sol",
+        "exportedSymbols": {
+            "FlowControl": [
+                66
+            ]
+        },
+        "id": 67,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    ">=",
+                    "0.4",
+                    ".22",
+                    "<",
+                    "0.9",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:32:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "FlowControl",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 66,
+                "linearizedBaseContracts": [
+                    66
+                ],
+                "name": "FlowControl",
+                "nameLocation": "76:11:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 27,
+                            "nodeType": "Block",
+                            "src": "170:239:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        9
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 9,
+                                            "mutability": "mutable",
+                                            "name": "givenDozenPrice",
+                                            "nameLocation": "185:15:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 27,
+                                            "src": "180:20:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 8,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "180:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 11,
+                                    "initialValue": {
+                                        "hexValue": "66616c7365",
+                                        "id": 10,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "bool",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "203:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "value": "false"
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "180:28:0"
+                                },
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 14,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "id": 12,
+                                            "name": "purchasedQty",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "222:12:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": ">=",
+                                        "rightExpression": {
+                                            "hexValue": "3132",
+                                            "id": 13,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "238:2:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_12_by_1",
+                                                "typeString": "int_const 12"
+                                            },
+                                            "value": "12"
+                                        },
+                                        "src": "222:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "falseBody": {
+                                        "expression": {
+                                            "id": 21,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftHandSide": {
+                                                "id": 19,
+                                                "name": "givenDozenPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 9,
+                                                "src": "341:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "nodeType": "Assignment",
+                                            "operator": "=",
+                                            "rightHandSide": {
+                                                "hexValue": "66616c7365",
+                                                "id": 20,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "bool",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "359:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                "value": "false"
+                                            },
+                                            "src": "341:23:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "id": 22,
+                                        "nodeType": "ExpressionStatement",
+                                        "src": "341:23:0"
+                                    },
+                                    "id": 23,
+                                    "nodeType": "IfStatement",
+                                    "src": "219:145:0",
+                                    "trueBody": {
+                                        "expression": {
+                                            "id": 17,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftHandSide": {
+                                                "id": 15,
+                                                "name": "givenDozenPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 9,
+                                                "src": "254:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "nodeType": "Assignment",
+                                            "operator": "=",
+                                            "rightHandSide": {
+                                                "hexValue": "74727565",
+                                                "id": 16,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "bool",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "271:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                "value": "true"
+                                            },
+                                            "src": "254:21:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "id": 18,
+                                        "nodeType": "ExpressionStatement",
+                                        "src": "254:21:0"
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "components": [
+                                            {
+                                                "id": 24,
+                                                "name": "givenDozenPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 9,
+                                                "src": "382:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "id": 25,
+                                        "isConstant": false,
+                                        "isInlineArray": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "TupleExpression",
+                                        "src": "381:17:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 7,
+                                    "id": 26,
+                                    "nodeType": "Return",
+                                    "src": "375:23:0"
+                                }
+                            ]
+                        },
+                        "id": 28,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "calcDozenDiscountIF",
+                        "nameLocation": "104:19:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 4,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 3,
+                                    "mutability": "mutable",
+                                    "name": "purchasedQty",
+                                    "nameLocation": "129:12:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 28,
+                                    "src": "124:17:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 2,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "124:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "123:19:0"
+                        },
+                        "returnParameters": {
+                            "id": 7,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 6,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 28,
+                                    "src": "165:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 5,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "165:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "164:6:0"
+                        },
+                        "scope": 66,
+                        "src": "95:314:0",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "private"
+                    },
+                    {
+                        "body": {
+                            "id": 64,
+                            "nodeType": "Block",
+                            "src": "494:300:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        36
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 36,
+                                            "mutability": "mutable",
+                                            "name": "givenDozenPrice",
+                                            "nameLocation": "509:15:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 64,
+                                            "src": "504:20:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 35,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "504:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 38,
+                                    "initialValue": {
+                                        "hexValue": "66616c7365",
+                                        "id": 37,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "bool",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "527:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        },
+                                        "value": "false"
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "504:28:0"
+                                },
+                                {
+                                    "assignments": [
+                                        40
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 40,
+                                            "mutability": "mutable",
+                                            "name": "numDonuts",
+                                            "nameLocation": "547:9:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 64,
+                                            "src": "542:14:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 39,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "542:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 42,
+                                    "initialValue": {
+                                        "hexValue": "31",
+                                        "id": 41,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "number",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "559:1:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_rational_1_by_1",
+                                            "typeString": "int_const 1"
+                                        },
+                                        "value": "1"
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "542:18:0"
+                                },
+                                {
+                                    "body": {
+                                        "id": 59,
+                                        "nodeType": "Block",
+                                        "src": "601:149:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 47,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "UnaryOperation",
+                                                    "operator": "++",
+                                                    "prefix": false,
+                                                    "src": "615:11:0",
+                                                    "subExpression": {
+                                                        "id": 46,
+                                                        "name": "numDonuts",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 40,
+                                                        "src": "615:9:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 48,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "615:11:0"
+                                            },
+                                            {
+                                                "condition": {
+                                                    "commonType": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    "id": 51,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftExpression": {
+                                                        "id": 49,
+                                                        "name": "numDonuts",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 40,
+                                                        "src": "645:9:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "BinaryOperation",
+                                                    "operator": ">=",
+                                                    "rightExpression": {
+                                                        "hexValue": "3132",
+                                                        "id": 50,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "658:2:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_12_by_1",
+                                                            "typeString": "int_const 12"
+                                                        },
+                                                        "value": "12"
+                                                    },
+                                                    "src": "645:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "id": 58,
+                                                "nodeType": "IfStatement",
+                                                "src": "641:99:0",
+                                                "trueBody": {
+                                                    "id": 57,
+                                                    "nodeType": "Block",
+                                                    "src": "662:78:0",
+                                                    "statements": [
+                                                        {
+                                                            "expression": {
+                                                                "id": 54,
+                                                                "isConstant": false,
+                                                                "isLValue": false,
+                                                                "isPure": false,
+                                                                "lValueRequested": false,
+                                                                "leftHandSide": {
+                                                                    "id": 52,
+                                                                    "name": "givenDozenPrice",
+                                                                    "nodeType": "Identifier",
+                                                                    "overloadedDeclarations": [],
+                                                                    "referencedDeclaration": 36,
+                                                                    "src": "680:15:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_bool",
+                                                                        "typeString": "bool"
+                                                                    }
+                                                                },
+                                                                "nodeType": "Assignment",
+                                                                "operator": "=",
+                                                                "rightHandSide": {
+                                                                    "hexValue": "74727565",
+                                                                    "id": 53,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": true,
+                                                                    "kind": "bool",
+                                                                    "lValueRequested": false,
+                                                                    "nodeType": "Literal",
+                                                                    "src": "698:4:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_bool",
+                                                                        "typeString": "bool"
+                                                                    },
+                                                                    "value": "true"
+                                                                },
+                                                                "src": "680:22:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_bool",
+                                                                    "typeString": "bool"
+                                                                }
+                                                            },
+                                                            "id": 55,
+                                                            "nodeType": "ExpressionStatement",
+                                                            "src": "680:22:0"
+                                                        },
+                                                        {
+                                                            "id": 56,
+                                                            "nodeType": "Break",
+                                                            "src": "720:5:0"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 45,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "id": 43,
+                                            "name": "numDonuts",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 40,
+                                            "src": "577:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "<",
+                                        "rightExpression": {
+                                            "id": 44,
+                                            "name": "purchaedQty",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 30,
+                                            "src": "589:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "577:23:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 60,
+                                    "nodeType": "WhileStatement",
+                                    "src": "571:179:0"
+                                },
+                                {
+                                    "expression": {
+                                        "components": [
+                                            {
+                                                "id": 61,
+                                                "name": "givenDozenPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 36,
+                                                "src": "771:15:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "id": 62,
+                                        "isConstant": false,
+                                        "isInlineArray": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "nodeType": "TupleExpression",
+                                        "src": "770:17:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 34,
+                                    "id": 63,
+                                    "nodeType": "Return",
+                                    "src": "763:24:0"
+                                }
+                            ]
+                        },
+                        "id": 65,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "calcDozenDiscountWHILE",
+                        "nameLocation": "425:22:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 31,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 30,
+                                    "mutability": "mutable",
+                                    "name": "purchaedQty",
+                                    "nameLocation": "453:11:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 65,
+                                    "src": "448:16:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 29,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "448:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "447:18:0"
+                        },
+                        "returnParameters": {
+                            "id": 34,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 33,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 65,
+                                    "src": "488:4:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 32,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "488:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "487:6:0"
+                        },
+                        "scope": 66,
+                        "src": "416:378:0",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "private"
+                    }
+                ],
+                "scope": 67,
+                "src": "67:729:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "0:796:0"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "12600",
+            "executionCost": "66",
+            "totalCost": "12666"
+        },
+        "internal": {
+            "calcDozenDiscountIF(uint256)": "infinite",
+            "calcDozenDiscountWHILE(uint256)": "infinite"
+        }
+    }
+}
